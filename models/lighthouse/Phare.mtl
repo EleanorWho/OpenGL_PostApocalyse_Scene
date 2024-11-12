@@ -1,0 +1,53 @@
+newmtl Material.027
+Ns 500
+Ka 0.1 0.1 0.1
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ke 0 0 0
+Ni 1.45
+d 1.0
+illum 2
+map_Kd Material.027_albedo.jpg
+map_Bump Material.027_normal.png
+map_Ks Material.027_metallic.jpg
+map_Ns Material.027_roughness.jpg
+map_d Material.027_AO.jpg
+
+newmtl escalier
+Ns 500
+Ka 0.1 0.1 0.1
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ke 0 0 0
+Ni 1.45
+d 1.0
+illum 2
+map_Kd escalier_albedo.jpg
+map_Bump escalier_normal.png
+map_Ks escalier_metallic.jpg
+map_Ns escalier_roughness.jpg
+map_d escalier_AO.jpg
+
+newmtl Material.001
+Ns 500
+Ka 0.1 0.1 0.1
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ke 0 0 0
+Ni 1.45
+d 1.0
+illum 2
+map_Kd Material.001_albedo.jpg
+map_Bump Material.001_normal.png
+map_Ns Material.001_roughness.jpg
+map_d Material.001_AO.jpg
+
+newmtl vitres
+Ns 200
+Ka 0.0000 0.0000 0.0000
+Kd 0.0000 0.0000 0.0000
+Ks 0.9000 0.9000 0.9000
+Ke 0 0 0
+Ni 1.5
+d 0.1
+illum 4

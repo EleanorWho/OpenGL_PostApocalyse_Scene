@@ -1,0 +1,26 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec2 TexCoords;
+in vec3 Normal;
+in vec3 FragPos;
+
+uniform sampler2D texture_diffuse; // The moon's texture
+uniform sampler2D texture_normal; // The normal map for the bumps
+uniform vec3 moonGlowColor; // The color of the moon's glow
+
+void main()
+{
+    // Calculate the normal from the normal map
+    vec3 normal = normalize(texture(texture_normal, TexCoords).rgb * 2.0 - 1.0);
+
+    // Use the normal and the view direction to calculate lighting here if needed
+    // ...
+
+    // Combine the texture color with the glow color
+    vec3 textureColor = texture(texture_diffuse, TexCoords).rgb;
+    vec3 glow = moonGlowColor * textureColor;
+
+    // Set the fragment color
+    FragColor = vec4(glow, 1.0);
+}

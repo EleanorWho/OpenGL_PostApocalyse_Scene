@@ -1,0 +1,36 @@
+#version 330 core
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec2 aTexCoord;
+
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+uniform float frequency;
+uniform float amplitude;
+uniform float time;
+
+out vec3 FragPos;
+out vec3 Normal;
+out vec2 TexCoord;
+
+void main()
+{
+	vec3 position = aPos;
+	
+	// Calculate the wave's height as a function of x, z, and time
+	float wave = amplitude * sin(frequency * sqrt(pow(position.x, 2.0) + pow(position.z, 2.0)) + time);
+	
+	// Calculate partial derivatives for the normals
+	float dWavedX = frequency * amplitude * cos(frequency * position.x + time);
+	float dWavedZ = frequency * amplitude * cos(frequency * position.z + time);
+
+	// Construct the new normal with the partial derivatives
+	vec3 calculatedNormal = normalize(vec3(-dWavedX, 1.0, -dWavedZ));
+	
+	FragPos = vec3(model * vec4(position, 1.0));
+	Normal = mat3(transpose(inverse(model))) * calculatedNormal;
+	
+	position = vec3(aPos.x, aPos.y + wave, aPos.z);
+	gl_Position = projection * view * model * vec4(position, 1.0);
+	TexCoord = vec2(aTexCoord.x, aTexCoord.y);
+}

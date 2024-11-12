@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rainbow Trout
+* source:	https://sketchfab.com/3d-models/rainbow-trout-bf4a5bde9e5b4882a77f508055596044
+* author:	DanielleTyler (https://sketchfab.com/DanielleTyler)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rainbow Trout" (https://sketchfab.com/3d-models/rainbow-trout-bf4a5bde9e5b4882a77f508055596044) by DanielleTyler (https://sketchfab.com/DanielleTyler) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

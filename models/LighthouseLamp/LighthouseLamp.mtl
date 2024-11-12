@@ -1,0 +1,32 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl GlassMat
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 4
+map_Kd GlassMat_albedo.jpg
+map_Bump GlassMat_normal.png
+map_Ks GlassMat_metallic.jpg
+map_Ns GlassMat_roughness.jpg
+map_d GlassMat_AO.jpg
+
+newmtl LightMat
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.215861 0.215861 0.215861
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd LightMat_albedo.jpg
+map_Bump LightMat_normal.png
+map_Ks LightMat_metallic.jpg
+map_Ns LightMat_roughness.jpg
+map_d LightMat_AO.jpg
